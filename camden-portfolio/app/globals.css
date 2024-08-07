@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  /* add font family later */
   margin: 0;
   padding: 0;
  
@@ -24,6 +23,15 @@ a:hover {
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
 }
 
 @layer utilities {
