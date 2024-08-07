@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* add font family later */
+  margin: 0;
+  padding: 0;
+ 
+}
+
+a, .btn {
+  transition: all 300ms ease;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
