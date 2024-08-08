@@ -25,6 +25,14 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
