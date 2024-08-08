@@ -27,7 +27,7 @@ const Home = () => {
 							<a href="#projects">Projects</a>
 						</li>
 						<li>
-							<a href="Contact">Contact</a>
+							<a href="#contact">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -124,7 +124,7 @@ const Home = () => {
 					onClick={() => (location.href = "./#about")}
 				/>
 			</section>
-			<section id="about" className="">
+			<section id="about">
 				<p className="section__text__p1">Get to Know More</p>
 				<h1 className="title">About Me</h1>
 				<div className="section-container">
@@ -194,40 +194,68 @@ const Home = () => {
 				<div className="experiece-details-container">
 					<div className="about-containers">
 						<div className="details-container">
-							<h2 className="experience-sub-title">
-								Frontend Development
-							</h2>
+							<h2 className="experience-sub-title">Frontend Development</h2>
 							<div className="article-container">
 								<article>
-									<Image className="icon" src="/assets/checkmark.png" alt="Experience icon" width={32} height={32}/>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
 									<div>
 										<h3>HTML</h3>
 										<p>Basic</p>
 									</div>
 								</article>
 								<article>
-									<Image className="icon" src="/assets/checkmark.png" alt="Experience icon" width={32} height={32}/>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
 									<div>
 										<h3>CSS</h3>
 										<p>Basic</p>
 									</div>
 								</article>
 								<article>
-									<Image className="icon" src="/assets/checkmark.png" alt="Experience icon" width={32} height={32}/>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
 									<div>
 										<h3>Java/TypeScript</h3>
 										<p>Intermediate</p>
 									</div>
 								</article>
 								<article>
-									<Image className="icon" src="/assets/checkmark.png" alt="Experience icon" width={32} height={32}/>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
 									<div>
 										<h3>NodeJS</h3>
 										<p>Basic</p>
 									</div>
 								</article>
 								<article>
-									<Image className="icon" src="/assets/checkmark.png" alt="Experience icon" width={32} height={32}/>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
 									<div>
 										<h3>React</h3>
 										<p>Intermediate</p>
@@ -236,40 +264,68 @@ const Home = () => {
 							</div>
 						</div>
 						<div className="details-container">
-							<h2 className="experience-sub-title">
-								Backend Development
-							</h2>
+							<h2 className="experience-sub-title">Backend Development</h2>
 							<div className="article-container">
 								<article>
-									<Image className="icon" src="/assets/checkmark.png" alt="Experience icon" width={32} height={32}/>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
 									<div>
 										<h3>Python</h3>
 										<p>Intermediate</p>
 									</div>
 								</article>
 								<article>
-									<Image className="icon" src="/assets/checkmark.png" alt="Experience icon" width={32} height={32}/>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
 									<div>
 										<h3>Firebase</h3>
 										<p>Basic</p>
 									</div>
 								</article>
 								<article>
-									<Image className="icon" src="/assets/checkmark.png" alt="Experience icon" width={32} height={32}/>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
 									<div>
 										<h3>SQL</h3>
 										<p>Basic</p>
 									</div>
 								</article>
 								<article>
-									<Image className="icon" src="/assets/checkmark.png" alt="Experience icon" width={32} height={32}/>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
 									<div>
 										<h3>Java</h3>
 										<p>Basic</p>
 									</div>
 								</article>
 								<article>
-									<Image className="icon" src="/assets/checkmark.png" alt="Experience icon" width={32} height={32}/>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
 									<div>
 										<h3>Git</h3>
 										<p>Basic</p>
@@ -285,9 +341,164 @@ const Home = () => {
 					width={32}
 					height={32}
 					className="icon-arrow"
+					onClick={() => (location.href = "./#projects")}
+				/>
+			</section>
+			<section id="projects">
+				<p className="section__text__p1">Browse My Recent</p>
+				<h1 className="title">Projects</h1>
+				<div className="experience-details-container">
+					<div className="about-containers">
+						<div className="details-container color-container">
+							<div className="article-container">
+								<Image
+									src="/assets/project-1.png"
+									alt="project 1"
+									width={500}
+									height={500}
+									className="project-img"
+								/>
+								<h2 className="experience-sub-title project-title">
+									Project One
+								</h2>
+								<div className="btn-container">
+									<button
+										className="btn btn-color-2 project-btn"
+										onClick={() => (location.href = "https://github.com/")}
+									>
+										GitHub
+									</button>
+									<button
+										className="btn btn-color-2 project-btn"
+										onClick={() => (location.href = "https://github.com/")}
+									>
+										Live Demo
+									</button>
+								</div>
+							</div>
+						</div>
+						<div className="details-container color-container">
+							<div className="article-container">
+								<Image
+									src="/assets/project-2.png"
+									alt="project 2"
+									width={500}
+									height={500}
+									className="project-img"
+								/>
+								<h2 className="experience-sub-title project-title">
+									Project Two
+								</h2>
+								<div className="btn-container">
+									<button
+										className="btn btn-color-2 project-btn"
+										onClick={() => (location.href = "https://github.com/")}
+									>
+										GitHub
+									</button>
+									<button
+										className="btn btn-color-2 project-btn"
+										onClick={() => (location.href = "https://github.com/")}
+									>
+										Live Demo
+									</button>
+								</div>
+							</div>
+						</div>
+						<div className="details-container color-container">
+							<div className="article-container">
+								<Image
+									src="/assets/project-3.png"
+									alt="project 3"
+									width={500}
+									height={500}
+									className="project-img"
+								/>
+								<h2 className="experience-sub-title project-title">
+									Project Three
+								</h2>
+								<div className="btn-container">
+									<button
+										className="btn btn-color-2 project-btn"
+										onClick={() => (location.href = "https://github.com/")}
+									>
+										GitHub
+									</button>
+									<button
+										className="btn btn-color-2 project-btn"
+										onClick={() => (location.href = "https://github.com/")}
+									>
+										Live Demo
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<Image
+					src="/assets/arrow.png"
+					alt="Arrow icon"
+					width={32}
+					height={32}
+					className="icon-arrow"
 					onClick={() => (location.href = "./#contact")}
 				/>
 			</section>
+			<section id="contact">
+				<p className="section__text__p1">Get in Touch</p>
+				<h1 className="title">Contact Me</h1>
+				<div className="contact-info-upper-container">
+					<div className="contact-info-container">
+						<Image
+							src="/assets/email.png"
+							alt="Email icon"
+							width={32}
+							height={32}
+							className="icon contact-icon email-icon"
+						/>
+						<p>
+							<a href="mailto:camden.scholl.32@gmail.com">
+								camden.scholl.32@gmail.com
+							</a>
+						</p>
+					</div>
+					<div className="contact-info-container">
+						<Image
+							src="/assets/linkedin.png"
+							alt="LinkedIn icon"
+							width={32}
+							height={32}
+							className="icon contact-icon"
+						/>
+						<p>
+							<a href="https://www.linkedin.com/in/camden-scholl/">
+								LinkedIn
+							</a>
+						</p>
+					</div>
+				</div>
+			</section>
+			<footer>
+				<nav>
+					<div className="nav-links-container">
+						<ul className="nav-links">
+							<li>
+								<a href="#about">About</a>
+							</li>
+							<li>
+								<a href="#experience">Experience</a>
+							</li>
+							<li>
+								<a href="#projects">Projects</a>
+							</li>
+							<li>
+								<a href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<p>Copyright &#169; 2024 Camden Scholl. All Rights Reserved.</p>
+			</footer>
 		</div>
 	);
 };
