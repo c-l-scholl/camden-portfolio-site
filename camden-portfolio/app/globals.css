@@ -67,6 +67,7 @@ a:hover {
 .hamburger-menu {
 	position: relative;
 	display: inline-block;
+	z-index: 10;
 }
 
 .hamburger-icon {
@@ -274,15 +275,20 @@ section {
 
 .section__pic-container {
 	display: flex;
-	min-height: 400px;
-	min-width: 400px;
+	height: 400px;
+	width: 400px;
 	margin: auto 0;
 }
+
+/* EXPERIENCE SECTION */
 
 #experience {
 	position: relative;
 }
 
+#experience h1 {
+	margin-bottom: 2rem;
+}
 .experience-sub-title {
 	color: rbg(85, 85, 85);
 	font-weight: 600;
@@ -345,54 +351,66 @@ article .icon {
 /* CONTACT PAGE */
 
 #contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 70vh;
 }
 
 .contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-
+	display: flex;
+	justify-content: center;
+	border-radius: 2rem;
+	border: rgb(53, 53, 53) 0.1rem solid;
+	border-color: rgb(163, 163, 163);
+	background: rgb(250, 250, 250);
+	margin: 2rem auto;
+	padding: 0.5rem;
 }
 
 .contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin: 1rem;
 }
 
 .contact-info-container p {
-  font-size: larger;
+	font-size: larger;
 }
 
 .contact-icon {
-  cursor: default;
+	cursor: default;
 }
 
 .email-icon {
-  height: 2.5rem;
-  width: auto;
+	height: 2.5rem;
+	width: auto;
 }
 
-/* FOOTER SECTION */ 
+/* FOOTER SECTION */
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+	height: 26vh;
+	margin: 0 1rem;
 }
 
 footer p {
-  text-align: center;
+	text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+	#profile {
+		height: 83vh;
+		margin-bottom: 6rem;
+	}
+
+	.about-containers {
+		flex-wrap: wrap;
+	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -401,5 +419,117 @@ footer p {
 	}
 	#hamburger-nav {
 		display: flex;
+	}
+
+	#experience,
+	.experience-details-container {
+		margin-top: 2rem;
+	}
+
+	#profile,
+	.section-container {
+		display: block;
+	}
+
+	.icon-arrow {
+		display: none;
+	}
+
+	section,
+	.section-container {
+		height: fit-content;
+	}
+
+	section {
+		margin: 0 5%;
+	}
+
+	.section__pic-container {
+		width: 275px;
+		height: 275px;
+		margin: 0 auto 2rem;
+	}
+
+	.about-containers {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#contact,
+	footer {
+		height: 40vh;
+	}
+
+	#profile {
+		height: 83vh;
+		margin-bottom: 0;
+	}
+
+	article {
+		font-size: 1rem;
+	}
+
+	footer nav {
+		height: fit-content;
+		margin-bottom: 2rem;
+	}
+
+	.about-containers,
+	.contact-info-upper-container,
+	.btn-container {
+		flex-wrap: wrap;
+	}
+
+	.contact-info-container {
+		margin: 0;
+	}
+
+	.contact-info-container p,
+	.nav-links li a {
+		font-size: 1rem;
+	}
+
+	.experience-sub-title {
+		font-size: 1.25rem;
+	}
+
+	.logo {
+		font-size: 1.5rem;
+	}
+
+	.nav-links {
+		flex-direction: column;
+		gap: 0.5rem;
+		text-align: center;
+	}
+
+	.section__pic-container {
+		height: 36vw;
+		width: 36vw;
+		justify-content: center;
+	}
+
+	.section__text__p2 {
+		font-size: 1.25rem;
+	}
+
+	.title {
+		font-size: 2rem;
+	}
+
+	.text-container {
+		text-align: left;
+	}
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+	#profile {
+			height: auto; /* Adjust height as needed */
+			margin-bottom: 2rem; /* Add margin to avoid overlap */
+	}
+
+	.about-containers {
+			margin-top: 2rem; /* Add margin to avoid overlap */
 	}
 }
