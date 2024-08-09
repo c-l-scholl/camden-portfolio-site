@@ -134,6 +134,7 @@ const Home = () => {
 							src="/assets/testimage.jpg"
 							alt="Profile Pic"
 							layout="intrinsic"
+							className="about-pic"
 							width={400}
 							height={400}
 						/>
