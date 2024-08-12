@@ -36,11 +36,10 @@ const Home = () => {
 				<div className="logo">Camden Scholl</div>
 				<div className="hamburger-menu">
 					<div className="hamburger-icon" onClick={() => toggleMenu()}>
-						{!isMenuOpen && <Menu />}
-						{isMenuOpen && <X />}
+						{!isMenuOpen ? <Menu /> : <X />}
 					</div>
 					{isMenuOpen && (
-						<div className="menu-links">
+						<div className={`menu-links ${isMenuOpen ? 'open' : 'closed'}`}>
 							<li>
 								<a href="#about" onClick={() => toggleMenu()}>
 									About
@@ -73,6 +72,7 @@ const Home = () => {
 						layout="intrinsic"
 						width={400}
 						height={400}
+						className="profile-pic"
 					/>
 				</div>
 				<div className="section__info-container">
@@ -131,7 +131,7 @@ const Home = () => {
 				<div className="section-container">
 					<div className="section__pic-container">
 						<Image
-							src="/assets/testimage.jpg"
+							src="/assets/IMG_1333.jpg"
 							alt="Profile Pic"
 							layout="intrinsic"
 							className="about-pic"
@@ -150,7 +150,7 @@ const Home = () => {
 								/>
 								<h3>Experience</h3>
 								<p>
-									1 year <br /> Full stack development
+									1 year <br /> Software Development <br /> IT and Cybersecurity
 								</p>
 							</div>
 							<div className="details-container">
@@ -171,13 +171,11 @@ const Home = () => {
 						</div>
 						<div className="text-container">
 							<p>
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
-								dignissimos? Labore, explicabo, eligendi quos id numquam ut
-								sequi porro asperiores neque optio, aliquid earum placeat nemo!
-								Asperiores necessitatibus, distinctio consequatur voluptate
-								aliquam voluptates excepturi recusandae quia ipsum neque
-								laudantium sequi corrupti, obcaecati fugiat dolore ullam hic
-								blanditiis, nesciunt provident dolor!
+								I am a student-athlete at Macalester College majoring in Computer Science
+								and minoring in Japanese Langauge. I pitch for the Macalester Scots Baseball Team.
+								I like playing video games such as Valorant, Overcooked, and Mario Kart, weightlifting,
+								and hanging out with my girlfriend. My technological interests are IT, cybersecurity,
+								web development, and making video games.
 							</p>
 						</div>
 					</div>
@@ -197,7 +195,7 @@ const Home = () => {
 				<div className="experiece-details-container">
 					<div className="about-containers">
 						<div className="details-container">
-							<h2 className="experience-sub-title">Frontend Development</h2>
+							<h2 className="experience-sub-title">Web Development</h2>
 							<div className="article-container">
 								<article>
 									<Image
@@ -264,10 +262,23 @@ const Home = () => {
 										<p>Intermediate</p>
 									</div>
 								</article>
+								<article>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
+									<div>
+										<h3>Firebase</h3>
+										<p>Basic</p>
+									</div>
+								</article>
 							</div>
 						</div>
 						<div className="details-container">
-							<h2 className="experience-sub-title">Backend Development</h2>
+							<h2 className="experience-sub-title">Other Skills</h2>
 							<div className="article-container">
 								<article>
 									<Image
@@ -282,19 +293,7 @@ const Home = () => {
 										<p>Intermediate</p>
 									</div>
 								</article>
-								<article>
-									<Image
-										className="icon"
-										src="/assets/checkmark.png"
-										alt="Experience icon"
-										width={32}
-										height={32}
-									/>
-									<div>
-										<h3>Firebase</h3>
-										<p>Basic</p>
-									</div>
-								</article>
+								
 								<article>
 									<Image
 										className="icon"
@@ -317,7 +316,7 @@ const Home = () => {
 										height={32}
 									/>
 									<div>
-										<h3>Java</h3>
+										<h3>Linux</h3>
 										<p>Basic</p>
 									</div>
 								</article>
@@ -331,6 +330,32 @@ const Home = () => {
 									/>
 									<div>
 										<h3>Git</h3>
+										<p>Basic</p>
+									</div>
+								</article>
+								<article>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
+									<div>
+										<h3>Unity in C#</h3>
+										<p>Basic</p>
+									</div>
+								</article>
+								<article>
+									<Image
+										className="icon"
+										src="/assets/checkmark.png"
+										alt="Experience icon"
+										width={32}
+										height={32}
+									/>
+									<div>
+										<h3>Cisco CLI</h3>
 										<p>Basic</p>
 									</div>
 								</article>
@@ -359,21 +384,21 @@ const Home = () => {
 									alt="project 1"
 									width={500}
 									height={500}
-									className="project-img"
+									className="project-img project-1-img"
 								/>
 								<h2 className="experience-sub-title project-title">
-									Project One
+									Pitch Tracking
 								</h2>
 								<div className="btn-container">
 									<button
 										className="btn btn-color-2 project-btn"
-										onClick={() => (location.href = "https://github.com/")}
+										onClick={() => window.open("https://github.com/c-l-scholl/macalester-pitch-tracker/tree/main", "_blank")}
 									>
 										GitHub
 									</button>
 									<button
 										className="btn btn-color-2 project-btn"
-										onClick={() => (location.href = "https://github.com/")}
+										onClick={() => (window.open("https://macalester-pitch-tracking.web.app/", "_blank"))}
 									>
 										Live Demo
 									</button>
@@ -395,13 +420,13 @@ const Home = () => {
 								<div className="btn-container">
 									<button
 										className="btn btn-color-2 project-btn"
-										onClick={() => (location.href = "https://github.com/")}
+										onClick={() => window.open("https://github.com/c-l-scholl/macalester-pitch-tracker/tree/main", "_blank")}
 									>
 										GitHub
 									</button>
 									<button
 										className="btn btn-color-2 project-btn"
-										onClick={() => (location.href = "https://github.com/")}
+										onClick={() => (window.open("https://macalester-pitch-tracking.web.app/", "_blank"))}
 									>
 										Live Demo
 									</button>
@@ -423,13 +448,13 @@ const Home = () => {
 								<div className="btn-container">
 									<button
 										className="btn btn-color-2 project-btn"
-										onClick={() => (location.href = "https://github.com/")}
+										onClick={() => window.open("https://github.com/c-l-scholl/macalester-pitch-tracker/tree/main", "_blank")}
 									>
 										GitHub
 									</button>
 									<button
 										className="btn btn-color-2 project-btn"
-										onClick={() => (location.href = "https://github.com/")}
+										onClick={() => (window.open("https://macalester-pitch-tracking.web.app/", "_blank"))}
 									>
 										Live Demo
 									</button>
