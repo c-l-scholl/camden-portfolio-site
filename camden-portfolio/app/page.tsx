@@ -36,10 +36,10 @@ const Home = () => {
 				<div className="logo">Camden Scholl</div>
 				<div className="hamburger-menu">
 					<div className="hamburger-icon" onClick={() => toggleMenu()}>
-						{!isMenuOpen ? <Menu /> : <X />}
+						{isMenuOpen ? <X /> : <Menu />}
 					</div>
 					{isMenuOpen && (
-						<div className={`menu-links ${isMenuOpen ? 'open' : 'closed'}`}>
+						<div className={`menu-links ${isMenuOpen ? "open" : "closed"}`}>
 							<li>
 								<a href="#about" onClick={() => toggleMenu()}>
 									About
@@ -83,7 +83,7 @@ const Home = () => {
 						<div className="btn-container">
 							<button
 								className="btn btn-color-2"
-								onClick={() => window.open("./assets/resume-example.pdf")}
+								onClick={() => window.open("./assets/Camden_Scholl_Resume.pdf")}
 							>
 								View Resume
 							</button>
@@ -101,9 +101,9 @@ const Home = () => {
 							alt="My LinkedIn profile"
 							width={32}
 							height={32}
-							className="cursor-pointer"
+							className="social-btn"
 							onClick={() =>
-								(location.href = "https://www.linkedin.com/in/camden-scholl/")
+								(window.open("https://www.linkedin.com/in/camden-scholl/", "_blank"))
 							}
 						/>
 						<Image
@@ -111,8 +111,8 @@ const Home = () => {
 							alt="My GitHub profile"
 							width={32}
 							height={32}
-							className="cursor-pointer"
-							onClick={() => (location.href = "https://github.com/c-l-scholl")}
+							className="social-btn"
+							onClick={() => (window.open("https://github.com/c-l-scholl", "_blank"))}
 						/>
 					</div>
 				</div>
@@ -150,7 +150,19 @@ const Home = () => {
 								/>
 								<h3>Experience</h3>
 								<p>
-									1 year <br /> Software Development <br /> IT and Cybersecurity
+									1 year <br /> Software Engineering
+								</p>
+							</div>
+							<div className="details-container">
+								<Image
+									src="/assets/experience.png"
+									alt="Experience icon"
+									width={40}
+									height={40}
+								/>
+								<h3>Experience</h3>
+								<p>
+									1 year <br /> IT and Networking
 								</p>
 							</div>
 							<div className="details-container">
@@ -171,11 +183,12 @@ const Home = () => {
 						</div>
 						<div className="text-container">
 							<p>
-								I am a student-athlete at Macalester College majoring in Computer Science
-								and minoring in Japanese Langauge. I pitch for the Macalester Scots Baseball Team.
-								I like playing video games such as Valorant, Overcooked, and Mario Kart, weightlifting,
-								and hanging out with my girlfriend. My technological interests are IT, cybersecurity,
-								web development, and making video games.
+								I am a student-athlete at Macalester College majoring in
+								Computer Science and minoring in Japanese Langauge. I pitch for
+								the Macalester Scots Baseball Team. I like playing video games
+								such as Valorant, Overcooked, and Mario Kart, weightlifting, and
+								hanging out with my girlfriend. My technological interests are
+								IT, cybersecurity, web development, and making video games.
 							</p>
 						</div>
 					</div>
@@ -293,7 +306,7 @@ const Home = () => {
 										<p>Intermediate</p>
 									</div>
 								</article>
-								
+
 								<article>
 									<Image
 										className="icon"
@@ -380,11 +393,11 @@ const Home = () => {
 						<div className="details-container color-container">
 							<div className="article-container">
 								<Image
-									src="/assets/project-1.png"
+									src="/assets/project-1-1.png"
 									alt="project 1"
 									width={500}
 									height={500}
-									className="project-img project-1-img"
+									className="project-img"
 								/>
 								<h2 className="experience-sub-title project-title">
 									Pitch Tracking
@@ -392,13 +405,23 @@ const Home = () => {
 								<div className="btn-container">
 									<button
 										className="btn btn-color-2 project-btn"
-										onClick={() => window.open("https://github.com/c-l-scholl/macalester-pitch-tracker/tree/main", "_blank")}
+										onClick={() =>
+											window.open(
+												"https://github.com/c-l-scholl/macalester-pitch-tracker/tree/main",
+												"_blank"
+											)
+										}
 									>
 										GitHub
 									</button>
 									<button
 										className="btn btn-color-2 project-btn"
-										onClick={() => (window.open("https://macalester-pitch-tracking.web.app/", "_blank"))}
+										onClick={() =>
+											window.open(
+												"https://macalester-pitch-tracking.web.app/",
+												"_blank"
+											)
+										}
 									>
 										Live Demo
 									</button>
@@ -415,18 +438,28 @@ const Home = () => {
 									className="project-img"
 								/>
 								<h2 className="experience-sub-title project-title">
-									Project Two
+									Tail of a Stray
 								</h2>
 								<div className="btn-container">
 									<button
 										className="btn btn-color-2 project-btn"
-										onClick={() => window.open("https://github.com/c-l-scholl/macalester-pitch-tracker/tree/main", "_blank")}
+										onClick={() =>
+											window.open(
+												"https://github.com/c-l-scholl/vg-unity-catgame",
+												"_blank"
+											)
+										}
 									>
 										GitHub
 									</button>
 									<button
 										className="btn btn-color-2 project-btn"
-										onClick={() => (window.open("https://macalester-pitch-tracking.web.app/", "_blank"))}
+										onClick={() =>
+											window.open(
+												"https://bell-tower.itch.io/tail-of-a-stray",
+												"_blank"
+											)
+										}
 									>
 										Live Demo
 									</button>
@@ -443,18 +476,28 @@ const Home = () => {
 									className="project-img"
 								/>
 								<h2 className="experience-sub-title project-title">
-									Project Three
+									Packet Sniffer
 								</h2>
 								<div className="btn-container">
 									<button
 										className="btn btn-color-2 project-btn"
-										onClick={() => window.open("https://github.com/c-l-scholl/macalester-pitch-tracker/tree/main", "_blank")}
+										onClick={() =>
+											window.open(
+												"https://github.com/c-l-scholl/python-packet-sniffer",
+												"_blank"
+											)
+										}
 									>
 										GitHub
 									</button>
 									<button
-										className="btn btn-color-2 project-btn"
-										onClick={() => (window.open("https://macalester-pitch-tracking.web.app/", "_blank"))}
+										className="btn btn-color-2 project-btn project-3-btn"
+										onClick={() =>
+											window.open(
+												"https://github.com/c-l-scholl/python-packet-sniffer",
+												"_blank"
+											)
+										}
 									>
 										Live Demo
 									</button>
@@ -499,9 +542,7 @@ const Home = () => {
 							className="icon contact-icon"
 						/>
 						<p>
-							<a href="https://www.linkedin.com/in/camden-scholl/">
-								LinkedIn
-							</a>
+							<a href="https://www.linkedin.com/in/camden-scholl/">LinkedIn</a>
 						</p>
 					</div>
 				</div>
