@@ -395,8 +395,8 @@ const Home = () => {
 								<Image
 									src="/assets/project-1-1.png"
 									alt="project 1"
-									width={500}
-									height={500}
+									width={400}
+									height={400}
 									className="project-img"
 								/>
 								<h2 className="experience-sub-title project-title">
@@ -433,8 +433,8 @@ const Home = () => {
 								<Image
 									src="/assets/project-2.png"
 									alt="project 2"
-									width={500}
-									height={500}
+									width={400}
+									height={400}
 									className="project-img"
 								/>
 								<h2 className="experience-sub-title project-title">
@@ -471,9 +471,9 @@ const Home = () => {
 								<Image
 									src="/assets/project-3.png"
 									alt="project 3"
-									width={500}
-									height={500}
-									className="project-img"
+									width={400}
+									height={400}
+									className="project-img project-3"
 								/>
 								<h2 className="experience-sub-title project-title">
 									Packet Sniffer
