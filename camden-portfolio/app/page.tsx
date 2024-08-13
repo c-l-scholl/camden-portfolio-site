@@ -131,7 +131,7 @@ const Home = () => {
 				<div className="section-container">
 					<div className="section__pic-container">
 						<Image
-							src="/assets/IMG_1333.jpg"
+							src="/assets/about-me.jpg"
 							alt="Profile Pic"
 							layout="intrinsic"
 							className="about-pic"
