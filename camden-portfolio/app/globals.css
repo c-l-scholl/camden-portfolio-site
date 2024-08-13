@@ -348,8 +348,9 @@ article .icon {
 
 img.project-img {
 	border-radius: 2rem;
+	max-width: 95%;
 	width: 90%;
-	height: 90%;
+	height: auto;
 	object-fit: contain;
 }
 
@@ -422,11 +423,16 @@ footer p {
 		height: 83vh;
 		margin-bottom: 6rem;
 	}
-
-	.about-containers {
-		flex-wrap: wrap;
-	}
 }
+
+/* @media screen and (min-width: 1000px) {
+	.about-container {
+		flex-wrap: nowrap;
+	}
+	.experience-details-container {
+		flex-direction: row;
+	}
+} */
 
 @media screen and (min-width: 1200px) {
 	.section__pic-container {
@@ -473,6 +479,7 @@ footer p {
 
 	.about-containers {
 		margin-top: 0;
+		flex-wrap: wrap;
 	}
 }
 
