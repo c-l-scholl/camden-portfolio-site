@@ -348,9 +348,8 @@ article .icon {
 
 img.project-img {
 	border-radius: 2rem;
-	max-width: 95%;
 	width: 90%;
-	height: auto;
+	height: 90%;
 	object-fit: contain;
 }
 
@@ -425,14 +424,20 @@ footer p {
 	}
 }
 
-/* @media screen and (min-width: 1000px) {
-	.about-container {
+@media screen and (min-width: 1700px) {
+	img.project-img {
+		max-width: 400px;
+		max-height: 400px;
+	}
+	
+	.article-container {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
 		flex-wrap: nowrap;
 	}
-	.experience-details-container {
-		flex-direction: row;
-	}
-} */
+}
 
 @media screen and (min-width: 1200px) {
 	.section__pic-container {
