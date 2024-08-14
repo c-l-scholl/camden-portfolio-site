@@ -1,4 +1,4 @@
-Welcome to my portfolio page! Here is the live link: 
+Welcome to my portfolio page! Here is the live link: [Camden Scholl's Portfolio](https://www.camdenscholl.vercel.app)
 
 To view the project:
 
