@@ -69,7 +69,8 @@ const Home = () => {
 					<Image
 						src="/assets/profile-pic.png"
 						alt="Camden Scholl Profile Picture"
-						layout="intrinsic"
+						priority={true}
+						placeholder="empty"
 						width={400}
 						height={400}
 						className="profile-pic"
@@ -133,7 +134,6 @@ const Home = () => {
 						<Image
 							src="/assets/about-me.jpg"
 							alt="Profile Pic"
-							layout="intrinsic"
 							className="about-pic"
 							width={400}
 							height={400}
