@@ -147,7 +147,8 @@ section {
 
 .profile-pic {
 	border-radius: 100%;
-	width: auto;
+	width: 100%;
+	height: auto;
 	flex-shrink: 0;
 }
 
