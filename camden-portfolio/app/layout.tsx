@@ -9,22 +9,7 @@ export const metadata: Metadata = {
   title: "Camden Scholl Portfolio",
   description: "About Camden Scholl",
   keywords: "portfolio, Camden Scholl, web developer, projects",
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
-  openGraph: {
-    title: "Camden Scholl Portfolio",
-    description: "About Camden Scholl",
-    url: "https://www.camdenscholl.vercel.app",
-    type: "website",
-    images: [
-      {
-        url: "/assets/bell-drawing.png",
-        width: 800,
-        height: 600,
-        alt: "Camden Scholl Portfolio Image",
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
