@@ -1,3 +1,11 @@
+:root {
+	--primary-p-color: rgb(85, 85, 85);
+	--primary-link-color: rgb(181, 181, 181);
+	--dark-btn-bg-color: rgb(53, 53, 53);
+	--light-border-color: rgb(163, 163, 163);
+	--off-white-bg-color: rgb(250, 250, 250);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,7 +16,7 @@ html {
 }
 
 p {
-	color: rgb(85, 85, 85);
+	color: var(--primary-p-color);
 }
 
 /* TRANSITION */
@@ -47,7 +55,7 @@ a:hover {
 	color: grey;
 	text-decoration: underline;
 	text-underline-offset: 1rem;
-	text-decoration-color: rgb(181, 181, 181);
+	text-decoration-color: var(--primary-link-color);
 }
 
 .logo {
@@ -113,7 +121,7 @@ a:hover {
 section {
 	padding-top: 4vh;
 	height: 96vh;
-	margin: 0 8rem;
+	margin: 0 14rem;
 	box-sizing: border-box;
 	min-height: fit-content;
 }
@@ -207,7 +215,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-	border: rgb(53, 53, 53) 0.1rem solid;
+	border: var(--dark-btn-bg-color) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -217,7 +225,7 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-	background: rgb(53, 53, 53);
+	background: var(--dark-btn-bg-color);
 	color: white;
 }
 
@@ -230,7 +238,7 @@ section {
 }
 
 .btn-color-2:hover {
-	border: rgb(255, 255, 255) 0.1rem solid;
+	border: white 0.1rem solid;
 }
 
 .btn-container {
@@ -269,7 +277,7 @@ section {
 
 .icon-arrow {
 	position: absolute;
-	right: -5rem;
+	right: -10rem;
 	bottom: 2.5rem;
 }
 
@@ -278,8 +286,8 @@ section {
 	flex: 1;
 	background: white;
 	border-radius: 2rem;
-	border: rgb(53, 53, 53) 0.1rem solid;
-	border-color: rgb(163, 163, 163);
+	border: var(--dark-btn-bg-color) 0.1rem solid;
+	border-color: var(--light-border-color);
 	text-align: center;
 }
 
@@ -344,8 +352,8 @@ article .icon {
 }
 
 .color-container {
-	border-color: rgb(163, 163, 163);
-	background: rgb(250, 250, 250);
+	border-color: var(--light-border-color);
+	background: var(--off-white-bg-color);
 }
 
 .project-img {
@@ -364,7 +372,7 @@ article .icon {
 
 .project-btn {
 	color: black;
-	border-color: rgb(163, 163, 163);
+	border-color: var(--light-border-color);
 }
 
 /* CONTACT PAGE */
@@ -381,8 +389,8 @@ article .icon {
 	justify-content: center;
 	border-radius: 2rem;
 	border: rgb(53, 53, 53) 0.1rem solid;
-	border-color: rgb(163, 163, 163);
-	background: rgb(250, 250, 250);
+	border-color: var(--light-border-color);
+	background: var(--off-white-bg-color);
 	margin: 2rem auto;
 	padding: 0.5rem;
 }
@@ -434,7 +442,7 @@ footer p {
 		max-height: 400px;
 	}
 	
-	.article-container {
+	#projects .article-container {
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
@@ -493,6 +501,11 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
+
+	section {
+		width: 90vw;
+	}
+
 	#contact,
 	footer {
 		height: 40vh;
