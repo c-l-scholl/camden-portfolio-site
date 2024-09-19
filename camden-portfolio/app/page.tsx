@@ -184,11 +184,11 @@ const Home = () => {
 						<div className="text-container">
 							<p>
 								I am a student-athlete at Macalester College majoring in
-								Computer Science and minoring in Japanese Langauge. I pitch for
-								the Macalester Scots Baseball Team. I like playing video games
-								such as Valorant, Overcooked, and Mario Kart, weightlifting, and
-								hanging out with my girlfriend. My technological interests are
-								IT, cybersecurity, web development, and making video games.
+								Computer Science and minoring in Japanese Langauge. I am also a starting pitcher for
+								the Macalester Scots Baseball Team. My technological interests are
+								IT, cybersecurity, web development, and making video games. In my free time, 
+								I play video games such as Valorant, Overcooked, and Mario Kart, weightlift, and
+								play guitar.
 							</p>
 						</div>
 					</div>
